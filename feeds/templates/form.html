@@ -1,9 +1,11 @@
 {% extends 'base.html' %}
 
 {% block body %}
+  <!-- enctype="multipart/form-data"는 이미지 파일을 전송하기 위해 필요한 코드이다. -->
   <form action="" method="post" enctype="multipart/form-data">
     {% csrf_token %}
     <input class="form-control" type="text" name="content">
+    <!-- accept는 파일 업로드시 이미지 파일만 첨부 가능하게 해준다. -->
     <input class="form-control" type="file" name="image" accept="image/*">
     <input class="btn btn-primary" type="submit">
   </form>

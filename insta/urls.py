@@ -23,4 +23,5 @@ urlpatterns = [
     path('feeds/', include('feeds.urls')),
 ]
 
+# Media와 Static을 이용하기 위한 방법
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

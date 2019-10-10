@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'feeds',
-    'imagekit',
+    'imagekit', # 사진 규격을 자르기 위함
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

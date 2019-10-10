@@ -7,11 +7,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- static 폴더의 'insta.png'를 가져온다. -->
   <link rel="icon" href="{% static 'insta.png' %}">
   <script src="https://kit.fontawesome.com/ff5b7a2eee.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <nav class="navbar navbar-light bg-light">
+    <!-- a태그 안쪽에 i태그를 넣어줘 navbar안에 이미지를 삽입한다. -->
     <a class="navbar-brand"><i class="fab fa-instagram"></i> | Instagram</a>
     <form class="form-inline">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
